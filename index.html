@@ -1,153 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mohamed Amr — Video Editing &amp; Arabic Subtitles</title>
-<meta name="description" content="I edit short-form videos and add clean, accurate Arabic subtitles. Native Arabic speaker, conversational English.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<html lang="en" dir="ltr">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mohamed Amr | Video Editing, Arabic Subtitles, Interactive Websites</title>
+<meta name="description" content="I edit short-form videos, add clean Arabic subtitles and build interactive websites. Native Arabic speaker, conversational English. Send the footage, get back something ready to post.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:wght@500&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --sand: #f4efec; --page: #ffffff; --ink: #251f21; --ink2: #585254;
-    --hair: #eae9ea; --teal: #4e8577;
-  }
-  * { box-sizing: border-box; }
-  body { margin: 0; background: var(--sand); color: var(--ink);
-    font: 400 16px/1.65 Inter, -apple-system, "Segoe UI", sans-serif; }
-  .card { max-width: 760px; margin: 32px auto; background: var(--page);
-    border-radius: 20px; padding: 44px 36px; box-shadow: 0 2px 18px rgba(37,31,33,.07); }
-  h1 { font: 500 34px/1.2 Lora, Georgia, serif; letter-spacing: -.01em; margin: 0 0 6px; }
-  h2 { font: 500 22px/1.3 Lora, Georgia, serif; margin: 0 0 14px; }
-  .kicker { color: var(--ink2); font-size: 12.5px; letter-spacing: .12em; text-transform: uppercase; margin: 34px 0 4px; }
-  .fact { color: var(--teal); font-weight: 600; font-size: 14px; margin: 0 0 14px; }
-  .intro { margin: 0 0 8px; max-width: 56ch; }
-  .strip { display: flex; gap: 10px; overflow-x: auto; padding: 6px 2px 14px; scroll-snap-type: x mandatory; }
-  .strip img { height: 240px; border-radius: 14px; scroll-snap-align: start; cursor: zoom-in; display: block; }
-  figure { margin: 14px 0; }
-  figure img { max-width: 230px; width: 100%; border-radius: 14px; display: block; }
-  figcaption { color: var(--ink2); font-size: 13px; margin-top: 8px; }
-  ol.services, ol.works, ol.steps { list-style: none; margin: 0; padding: 0; counter-reset: item; }
-  ol.services li, ol.works li { counter-increment: item; display: flex; gap: 16px;
-    padding: 16px 0; border-top: 1px solid var(--hair); align-items: flex-start; }
-  ol.services li::before, ol.works li::before { content: counter(item) ".";
-    color: var(--ink2); min-width: 22px; }
-  ol.steps { counter-reset: step; margin-top: 6px; }
-  ol.steps li { counter-increment: step; padding: 8px 0 8px 0; display: flex; gap: 14px; }
-  ol.steps li::before { content: counter(step); color: var(--ink2); min-width: 22px; text-align: right; }
-  .svc-body { flex: 1; }
-  .svc-name { font-weight: 600; }
-  .svc-detail { color: var(--ink2); font-size: 14.5px; margin-top: 2px; }
-  .svc-value { font-weight: 600; color: var(--ink); white-space: nowrap; }
-  .svc-value.known { color: var(--teal); }
-  .works img { width: 64px; height: 64px; object-fit: cover; border-radius: 10px; cursor: zoom-in; flex: none; }
-  dl { display: grid; grid-template-columns: minmax(120px,180px) 1fr; margin: 18px 0 0; }
-  dt { color: var(--ink2); padding: 10px 0; border-top: 1px solid var(--hair); }
-  dd { margin: 0; padding: 10px 0; border-top: 1px solid var(--hair); font-weight: 500; }
-  .note { background: var(--sand); border-radius: 12px; padding: 14px 16px; margin: 18px 0; font-size: 14.5px; }
-  .note b { display: block; margin-bottom: 4px; }
-  a { color: var(--teal); text-decoration: none; font-weight: 500; }
-  a:hover { text-decoration: underline; }
-  .links p { margin: 10px 0; }
-  footer { color: var(--ink2); font-size: 13px; margin-top: 38px; padding-top: 16px; border-top: 1px solid var(--hair); }
-  .lang { margin: 0 0 18px; font-size: 14px; }
-  #lightbox { position: fixed; inset: 0; background: rgba(20,16,17,.88); display: none;
-    align-items: center; justify-content: center; z-index: 10; cursor: zoom-out; }
-  #lightbox.open { display: flex; }
-  #lightbox img { max-width: 92vw; max-height: 88vh; border-radius: 10px; }
-  @media (max-width: 640px) {
-    .card { margin: 0; border-radius: 0; padding: 28px 20px; }
-    h1 { font-size: 27px; }
-    .strip img { height: 190px; }
-    .svc-value { white-space: normal; }
-  }
-</style>
-</head>
-<body>
-<div class="card">
-  <p class="lang"><a href="ar.html">النسخة العربية</a></p>
-  <h1>Mohamed Amr — video editing &amp; Arabic subtitles</h1>
-  <p class="fact">Alexandria, Egypt · 4 years editing</p>
-  <p class="intro">I edit short-form videos and add clean, accurate Arabic subtitles. Native Arabic speaker, conversational English. Send the footage, get back a tidy short that is ready to post.</p>
-
-  <div class="strip" aria-label="Frames from Mohamed's samples">
-    <img src="skincare.jpg" alt="Frame from the skincare promo reel with Arabic text">
-    <img src="beach.jpg" alt="Frame from the travel reel, sea at sunset with Arabic text">
-    <img src="gow.jpg" alt="Frame from the God of War subtitled sample">
-    <img src="desk.jpg" alt="Frame from the translation-services promo reel">
-  </div>
-
-  <p class="kicker">About</p>
-  <figure>
-    <img src="sunset.jpg" alt="Mohamed Amr by the sea at sunset">
-    <figcaption>Mohamed Amr, video editor and Arabic subtitler from Alexandria.</figcaption>
-  </figure>
-  <p>I use AI tools to speed up parts of the workflow, and every video gets a full manual review before delivery. Deadlines and small details are the whole job, and I treat them that way.</p>
-
-  <p class="kicker">What I do</p>
-  <h2>Services and pricing</h2>
-  <ol class="services">
-    <li><div class="svc-body"><div class="svc-name">Short-form video editing</div><div class="svc-detail">Reels, Shorts and TikTok. Clean cuts, pacing, captions and sound, ready to post. Two-day delivery with two free revisions.</div></div><span class="svc-value known">$10 / video</span></li>
-    <li><div class="svc-body"><div class="svc-name">Arabic subtitling</div><div class="svc-detail">Accurate, well-timed Arabic subtitles that stay easy to read on a phone screen.</div></div><span class="svc-value">From $10</span></li>
-    <li><div class="svc-body"><div class="svc-name">English-Arabic translation</div><div class="svc-detail">Articles, scripts and video dialogue, translated by a native Arabic speaker and reviewed line by line.</div></div><span class="svc-value">Custom quote</span></li>
-    <li><div class="svc-body"><div class="svc-name">Simple websites</div><div class="svc-detail">One-page portfolio and landing sites that show your work and take orders. This site is the sample.</div></div><span class="svc-value">Custom quote</span></li>
-  </ol>
-  <dl>
-    <dt>Per video</dt><dd>Up to 1 minute, $10</dd>
-    <dt>Delivery</dt><dd>2 days</dd>
-    <dt>Revisions</dt><dd>2 free</dd>
-    <dt>Hourly work</dt><dd>From $8 / hour</dd>
-    <dt>Tools</dt><dd>CapCut, Premiere Pro, AI-assisted workflow</dd>
-  </dl>
-
-  <p class="kicker">The process</p>
-  <h2>How a project goes</h2>
-  <ol class="steps">
-    <li>Send your footage and a note on the style you want.</li>
-    <li>I edit, subtitle and time everything, then send a first cut.</li>
-    <li>You ask for changes, two rounds are free.</li>
-    <li>Final video arrives within two days, ready to post.</li>
-  </ol>
-
-  <p class="kicker">Samples</p>
-  <h2>Selected work, 9 samples</h2>
-  <ol class="works">
-    <li><img src="skincare.jpg" alt="Frame from the skincare promo reel"><div class="svc-body"><div class="svc-name">Skincare promo reel</div><div class="svc-detail">Editing and Arabic ad copy for a skincare reel.</div></div></li>
-    <li><img src="desk.jpg" alt="Frame from the translation-services promo reel"><div class="svc-body"><div class="svc-name">Promo reel for a translation service</div><div class="svc-detail">Editing and Arabic copy, desk and coffee scene.</div></div></li>
-    <li><img src="beach.jpg" alt="Frame from the travel promo reel"><div class="svc-body"><div class="svc-name">Travel promo reel</div><div class="svc-detail">Editing and Arabic text design over a sunset beach scene.</div></div></li>
-    <li><img src="gow.jpg" alt="Frame from the God of War sample"><div class="svc-body"><div class="svc-name">God of War Ragnarök scene</div><div class="svc-detail">Arabic subtitles for a game scene. Sample.</div></div></li>
-    <li><img src="bvs.jpg" alt="Frame from the Batman v Superman sample"><div class="svc-body"><div class="svc-name">Batman v Superman scene</div><div class="svc-detail">Arabic subtitles for a film scene. Sample.</div></div></li>
-    <li><img src="egyptian.jpg" alt="Frame from the classic Egyptian film"><div class="svc-body"><div class="svc-name">Classic Egyptian film</div><div class="svc-detail">Full scene translated from Arabic into English subtitles.</div></div></li>
-    <li><img src="tsushima.jpg" alt="Frame from the Ghost of Tsushima sample"><div class="svc-body"><div class="svc-name">Ghost of Tsushima video</div><div class="svc-detail">Arabic subtitles for game footage.</div></div></li>
-    <li><img src="joker.jpg" alt="Frame from the Joker sample"><div class="svc-body"><div class="svc-name">Joker scene</div><div class="svc-detail">Arabic subtitles plus editing adjustments on a film scene.</div></div></li>
-    <li><img src="reel.jpg" alt="Frame from the subtitled reel"><div class="svc-body"><div class="svc-name">Subtitled reel</div><div class="svc-detail">Reel editing with Arabic subtitles.</div></div></li>
-  </ol>
-  <div class="note"><b>About the film and game samples</b>The scenes belong to their studios; the Arabic translation, subtitle timing and editing on every clip are my work.</div>
-  <p>The playable videos live in my <a href="https://mostaql.com/u/Mohamed13314/portfolio">Mostaql portfolio</a>.</p>
-
-  <p class="kicker">Hire me</p>
-  <h2>Find me on</h2>
-  <div class="links">
-    <p><a href="https://mostaql.com/u/Mohamed13314">Mostaql — full video portfolio and reviews</a></p>
-    <p><a href="https://www.fiverr.com/mohamedamr_cut">Fiverr — fixed-price gigs from $10</a></p>
-    <p><a href="https://www.freelancer.com/u/mohamedamrcut">Freelancer — bids and hourly work</a></p>
-    <p><a href="https://www.linkedin.com/in/mohamed-amr-85429a452/">LinkedIn — profile and background</a></p>
-    <p>Email: <a href="mailto:mamr97794@gmail.com">mamr97794@gmail.com</a></p>
-  </div>
-
-  <footer>Portfolio and prices checked 26 Nov 2026.</footer>
-</div>
-
-<div id="lightbox"><img id="lightbox-img" alt=""></div>
-<script>
-  const box = document.getElementById('lightbox');
-  const boxImg = document.getElementById('lightbox-img');
-  document.querySelectorAll('.strip img, .works img').forEach(img => {
-    img.addEventListener('click', () => { boxImg.src = img.src; boxImg.alt = img.alt; box.classList.add('open'); });
-  });
-  box.addEventListener('click', () => box.classList.remove('open'));
-  document.addEventListener('keydown', e => { if (e.key === 'Escape') box.classList.remove('open'); });
-</script>
-</body>
-</html>
+<link rel="stylesheet" href="style.css">
+<style>:root{--f:Inter;--fh:Lora}</style>
+</head><body>
+<header><div class="bar"><a class="brand" href="index.html">Mohamed Amr</a><nav><a href="index.html" class=on>Home</a><a href="services.html">Services</a><a href="work.html">Work</a><a href="contact.html">Contact</a></nav><a class="sw" href="ar.html" hreflang="ar">العربية</a></div></header>
+<main>
+<section class="card"><p class="fact">Alexandria, Egypt · 4 years editing</p><h1>Video editing, Arabic subtitles and interactive websites</h1><p>I edit short-form videos, add clean Arabic subtitles and build interactive websites. Native Arabic speaker, conversational English. Send the footage, get back something ready to post.</p>
+<div class="btns"><a class="btn p" href="work.html">See my work</a><a class="btn" href="services.html">Services and prices</a><a class="btn" href="https://wa.me/201210699651" target="_blank" rel="noopener">💬 Message on WhatsApp</a></div>
+<div class="strip"><img data-zoom src="skincare.jpg" alt="Skincare promo reel"><img data-zoom src="beach.jpg" alt="Travel promo reel"><img data-zoom src="gow.jpg" alt="God of War Ragnarök scene"><img data-zoom src="desk.jpg" alt="Promo reel for a translation service"></div></section>
+<section class="card"><p class="kicker">What I do</p><div class="cards"><a class="mini" href="services.html#edit"><span class="ic">🎬</span><b>Video editing</b><span>Reels, Shorts and TikTok, ready to post.</span><em>Learn more →</em></a><a class="mini" href="services.html#sub"><span class="ic">💬</span><b>Arabic subtitles</b><span>Accurate and easy to read on a phone.</span><em>Learn more →</em></a><a class="mini" href="services.html#web"><span class="ic">🌐</span><b>Interactive websites</b><span>Pages with buttons, navigation and contact forms.</span><em>Learn more →</em></a></div></section>
+<section class="card"><p class="kicker">About</p><figure><img src="sunset.jpg" alt="Mohamed Amr, video editor and Arabic subtitler from Alexandria."><figcaption>Mohamed Amr, video editor and Arabic subtitler from Alexandria.</figcaption></figure><p>I use AI tools to speed up parts of the workflow, and every video gets a full manual review before delivery. Deadlines and small details are the whole job, and I treat them that way.</p><div class="btns"><a class="btn p" href="https://wa.me/201210699651" target="_blank" rel="noopener">💬 Message on WhatsApp</a><a class="btn" href="tel:+201210699651">📞 Call</a><a class="btn" href="mailto:mamr97794@gmail.com">✉️ Email me</a></div></section>
+</main><footer>Portfolio and prices checked 26 Nov 2026.</footer>
+<a class="btn p fab" href="https://wa.me/201210699651" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+<div id="lb"><img id="lbi" alt=""></div><script src="script.js"></script></body></html>
