@@ -15,3 +15,8 @@ if(form)form.addEventListener('submit',e=>{e.preventDefault();const d=new FormDa
 const cp=document.getElementById('cp');
 if(cp)cp.addEventListener('click',()=>{navigator.clipboard&&navigator.clipboard.writeText('+201210699651');const o=cp.textContent;cp.textContent=cp.dataset.done;setTimeout(()=>cp.textContent=o,1600)});
 (function(){const s=new URLSearchParams(location.search).get('s'),sel=document.getElementById('t');if(s&&sel){const m={edit:0,sub:1,tr:2,web:3};if(m[s]!==undefined)sel.selectedIndex=m[s]}})();
+
+document.querySelectorAll('.vp').forEach(b=>b.addEventListener('click',()=>{
+ const v=document.createElement('video');v.src='videos/'+b.dataset.v+'.mp4';v.controls=true;v.autoplay=true;v.playsInline=true;v.preload='metadata';
+ const img=b.querySelector('img');if(img)v.poster=img.getAttribute('src');
+ b.replaceWith(v);}));
