@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>محمد عمرو — مونتاج فيديو وترجمة عربية</title>
+<meta name="description" content="بعمل مونتاج للفيديوهات القصيرة وبضيف ترجمة عربية واضحة ودقيقة. لغتي الأم العربية وبتكلم إنجليزي كويس.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --sand: #f4efec; --page: #ffffff; --ink: #251f21; --ink2: #585254;
+    --hair: #eae9ea; --teal: #4e8577;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--sand); color: var(--ink);
+    font: 400 16px/1.8 Cairo, Tahoma, sans-serif; }
+  .card { max-width: 760px; margin: 32px auto; background: var(--page);
+    border-radius: 20px; padding: 44px 36px; box-shadow: 0 2px 18px rgba(37,31,33,.07); }
+  h1 { font-weight: 700; font-size: 30px; line-height: 1.4; margin: 0 0 6px; }
+  h2 { font-weight: 700; font-size: 21px; margin: 0 0 14px; }
+  .kicker { color: var(--ink2); font-size: 13px; margin: 34px 0 4px; }
+  .fact { color: var(--teal); font-weight: 600; font-size: 14px; margin: 0 0 14px; }
+  .intro { margin: 0 0 8px; }
+  .strip { display: flex; gap: 10px; overflow-x: auto; padding: 6px 2px 14px; }
+  .strip img { height: 240px; border-radius: 14px; cursor: zoom-in; display: block; }
+  figure { margin: 14px 0; }
+  figure img { max-width: 230px; width: 100%; border-radius: 14px; display: block; }
+  figcaption { color: var(--ink2); font-size: 13px; margin-top: 8px; }
+  ol.services, ol.works, ol.steps { list-style: none; margin: 0; padding: 0; counter-reset: item; }
+  ol.services li, ol.works li { counter-increment: item; display: flex; gap: 16px;
+    padding: 16px 0; border-top: 1px solid var(--hair); align-items: flex-start; }
+  ol.services li::before, ol.works li::before { content: counter(item) ".";
+    color: var(--ink2); min-width: 22px; }
+  ol.steps { counter-reset: step; margin-top: 6px; }
+  ol.steps li { counter-increment: step; padding: 8px 0; display: flex; gap: 14px; }
+  ol.steps li::before { content: counter(step); color: var(--ink2); min-width: 22px; }
+  .svc-body { flex: 1; }
+  .svc-name { font-weight: 700; }
+  .svc-detail { color: var(--ink2); font-size: 14.5px; margin-top: 2px; }
+  .svc-value { font-weight: 600; color: var(--ink); }
+  .svc-value.known { color: var(--teal); }
+  .works img { width: 64px; height: 64px; object-fit: cover; border-radius: 10px; cursor: zoom-in; flex: none; }
+  dl { display: grid; grid-template-columns: minmax(110px,160px) 1fr; margin: 18px 0 0; }
+  dt { color: var(--ink2); padding: 10px 0; border-top: 1px solid var(--hair); }
+  dd { margin: 0; padding: 10px 0; border-top: 1px solid var(--hair); font-weight: 600; }
+  .note { background: var(--sand); border-radius: 12px; padding: 14px 16px; margin: 18px 0; font-size: 14.5px; }
+  .note b { display: block; margin-bottom: 4px; }
+  a { color: var(--teal); text-decoration: none; font-weight: 600; }
+  a:hover { text-decoration: underline; }
+  .links p { margin: 10px 0; }
+  footer { color: var(--ink2); font-size: 13px; margin-top: 38px; padding-top: 16px; border-top: 1px solid var(--hair); }
+  .lang { margin: 0 0 18px; font-size: 14px; }
+  #lightbox { position: fixed; inset: 0; background: rgba(20,16,17,.88); display: none;
+    align-items: center; justify-content: center; z-index: 10; cursor: zoom-out; }
+  #lightbox.open { display: flex; }
+  #lightbox img { max-width: 92vw; max-height: 88vh; border-radius: 10px; }
+  @media (max-width: 640px) {
+    .card { margin: 0; border-radius: 0; padding: 28px 20px; }
+    h1 { font-size: 24px; }
+    .strip img { height: 190px; }
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <p class="lang"><a href="index.html">English version</a></p>
+  <h1>محمد عمرو — مونتاج فيديو وترجمة عربية</h1>
+  <p class="fact">الإسكندرية، مصر · أربع سنوات خبرة</p>
+  <p class="intro">بعمل مونتاج للفيديوهات القصيرة وبضيف ترجمة عربية واضحة ودقيقة. لغتي الأم العربية وبتكلم إنجليزي كويس. ابعت الفيديو، واستلمه جاهز للنشر.</p>
+
+  <div class="strip" aria-label="كادرات من عينات محمد">
+    <img src="skincare.jpg" alt="كادر من ريلز العناية بالبشرة وفيه نص عربي">
+    <img src="beach.jpg" alt="كادر من الريلز السياحي، بحر وقت الغروب وفيه نص عربي">
+    <img src="gow.jpg" alt="كادر من عينة جود أوف وور المترجمة">
+    <img src="desk.jpg" alt="كادر من ريلز خدمة الترجمة">
+  </div>
+
+  <p class="kicker">عني</p>
+  <figure>
+    <img src="sunset.jpg" alt="محمد عمرو جنب البحر وقت الغروب">
+    <figcaption>محمد عمرو، مونتير ومترجم من الإسكندرية.</figcaption>
+  </figure>
+  <p>بستخدم أدوات ذكاء اصطناعي عشان أسرّع جزء من الشغل، وكل فيديو بيتعمله مراجعة يدوية كاملة قبل التسليم. المواعيد والتفاصيل الصغيرة هي الشغلانة كلها، وأنا بعاملها كده.</p>
+
+  <p class="kicker">الخدمات</p>
+  <h2>الخدمات والأسعار</h2>
+  <ol class="services">
+    <li><div class="svc-body"><div class="svc-name">مونتاج فيديوهات قصيرة</div><div class="svc-detail">ريلز وشورتس وتيك توك. قصّات نضيفة وإيقاع وكتابة على الشاشة وصوت، جاهز للنشر. التسليم في يومين مع تعديلين مجانيين.</div></div><span class="svc-value known"><bdi>$10</bdi> للفيديو</span></li>
+    <li><div class="svc-body"><div class="svc-name">ترجمة مصاحبة عربية</div><div class="svc-detail">ترجمة دقيقة ومضبوطة التوقيت وسهلة القراءة على شاشة الموبايل.</div></div><span class="svc-value">تبدأ من <bdi>$10</bdi></span></li>
+    <li><div class="svc-body"><div class="svc-name">ترجمة إنجليزي وعربي</div><div class="svc-detail">مقالات وسكريبتات وحوار فيديوهات، مترجمة بإيد متحدث أصلي للعربية وبمراجعة سطر بسطر.</div></div><span class="svc-value">سعر حسب المشروع</span></li>
+    <li><div class="svc-body"><div class="svc-name">مواقع بسيطة</div><div class="svc-detail">مواقع من صفحة واحدة للبورتفوليو والخدمات، بتعرض شغلك وتستقبل طلبات. الموقع ده هو النموذج.</div></div><span class="svc-value">سعر حسب المشروع</span></li>
+  </ol>
+  <dl>
+    <dt>الفيديو</dt><dd>حتى دقيقة واحدة، <bdi>$10</bdi></dd>
+    <dt>التسليم</dt><dd>يومان</dd>
+    <dt>التعديلات</dt><dd>اتنين مجانًا</dd>
+    <dt>الشغل بالساعة</dt><dd>يبدأ من <bdi>$8</bdi> للساعة</dd>
+    <dt>الأدوات</dt><dd><bdi>CapCut</bdi> و<bdi>Premiere Pro</bdi> وسير عمل بأدوات ذكاء اصطناعي</dd>
+  </dl>
+
+  <p class="kicker">الطريقة</p>
+  <h2>المشروع بيمشي إزاي</h2>
+  <ol class="steps">
+    <li>ابعت الفيديو وملاحظة عن الشكل اللي عايزه.</li>
+    <li>أعمل المونتاج والترجمة وأضبط التوقيت، وأبعتلك أول نسخة.</li>
+    <li>تطلب تعديلاتك، وأول تعديلين مجانًا.</li>
+    <li>الفيديو النهائي يوصلك في خلال يومين جاهز للنشر.</li>
+  </ol>
+
+  <p class="kicker">عينات</p>
+  <h2>من شغلي، تسع عينات</h2>
+  <ol class="works">
+    <li><img src="skincare.jpg" alt="كادر من ريلز العناية بالبشرة"><div class="svc-body"><div class="svc-name">ريلز إعلاني للعناية بالبشرة</div><div class="svc-detail">مونتاج ونصوص إعلانية عربية.</div></div></li>
+    <li><img src="desk.jpg" alt="كادر من ريلز خدمة الترجمة"><div class="svc-body"><div class="svc-name">ريلز إعلاني لخدمة ترجمة</div><div class="svc-detail">مونتاج ونصوص عربية، مشهد مكتب وقهوة.</div></div></li>
+    <li><img src="beach.jpg" alt="كادر من الريلز السياحي"><div class="svc-body"><div class="svc-name">ريلز سياحي</div><div class="svc-detail">مونتاج وتصميم نصوص عربية على مشهد بحر وقت الغروب.</div></div></li>
+    <li><img src="gow.jpg" alt="كادر من عينة جود أوف وور"><div class="svc-body"><div class="svc-name">مشهد من لعبة جود أوف وور راجناروك</div><div class="svc-detail">ترجمة عربية لمشهد لعبة. عينة.</div></div></li>
+    <li><img src="bvs.jpg" alt="كادر من عينة باتمان ضد سوبرمان"><div class="svc-body"><div class="svc-name">مشهد من فيلم باتمان ضد سوبرمان</div><div class="svc-detail">ترجمة عربية لمشهد فيلم. عينة.</div></div></li>
+    <li><img src="egyptian.jpg" alt="كادر من الفيلم المصري الكلاسيكي"><div class="svc-body"><div class="svc-name">فيلم مصري كلاسيكي</div><div class="svc-detail">مشهد كامل مترجم من العربية إلى ترجمة إنجليزية مصاحبة.</div></div></li>
+    <li><img src="tsushima.jpg" alt="كادر من عينة جوست أوف تسوشيما"><div class="svc-body"><div class="svc-name">فيديو جوست أوف تسوشيما</div><div class="svc-detail">ترجمة عربية لمشاهد لعبة.</div></div></li>
+    <li><img src="joker.jpg" alt="كادر من عينة الجوكر"><div class="svc-body"><div class="svc-name">مشهد من فيلم الجوكر</div><div class="svc-detail">ترجمة عربية وتعديلات مونتاج على مشهد فيلم.</div></div></li>
+    <li><img src="reel.jpg" alt="كادر من عينة الريلز"><div class="svc-body"><div class="svc-name">ريلز مع ترجمة مصاحبة</div><div class="svc-detail">مونتاج ريلز مع ترجمة عربية.</div></div></li>
+  </ol>
+  <div class="note"><b>عن عينات الأفلام والألعاب</b>المشاهد ملك لاستوديوهاتها؛ الترجمة العربية وضبط التوقيت والمونتاج في كل مقطع شغلي أنا.</div>
+  <p>الفيديوهات كاملة موجودة على <a href="https://mostaql.com/u/Mohamed13314/portfolio">معرض أعمالي في مستقل</a>.</p>
+
+  <p class="kicker">اطلب شغلك</p>
+  <h2>تلاقيني على</h2>
+  <div class="links">
+    <p><a href="https://mostaql.com/u/Mohamed13314">مستقل، معرض الفيديوهات الكامل وتقييمات العملاء</a></p>
+    <p><a href="https://www.fiverr.com/mohamedamr_cut">فايفر، خدمات بسعر ثابت تبدأ من عشرة دولار</a></p>
+    <p><a href="https://www.freelancer.com/u/mohamedamrcut">فريلانسر، عروض وشغل بالساعة</a></p>
+    <p><a href="https://www.linkedin.com/in/mohamed-amr-85429a452/">لينكدإن، البروفايل والخلفية</a></p>
+    <p>الإيميل: <bdi><a href="mailto:mamr97794@gmail.com">mamr97794@gmail.com</a></bdi></p>
+  </div>
+
+  <footer>الأعمال والأسعار مراجعة بتاريخ <bdi>26</bdi> نوفمبر <bdi>2026</bdi>.</footer>
+</div>
+
+<div id="lightbox"><img id="lightbox-img" alt=""></div>
+<script>
+  const box = document.getElementById('lightbox');
+  const boxImg = document.getElementById('lightbox-img');
+  document.querySelectorAll('.strip img, .works img').forEach(img => {
+    img.addEventListener('click', () => { boxImg.src = img.src; boxImg.alt = img.alt; box.classList.add('open'); });
+  });
+  box.addEventListener('click', () => box.classList.remove('open'));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') box.classList.remove('open'); });
+</script>
+</body>
+</html>
